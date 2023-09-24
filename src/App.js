@@ -13,50 +13,29 @@ import { EverythingFadesToBlue } from './pages/EverythingFadesToBlue'
 import { LofiGirl } from './pages/LofiGirl'
 import { LofiSleepyGirl } from './pages/LofiSleepyGirl'
 import { Taiki } from './pages/Taiki'
+import { Route, Routes } from 'react-router-dom'
 
 export default function App() {
-
-  let Component;
-  switch (window.location.pathname) {
-    case "/":
-      Component = App
-      break
-    case "/BootlegSmoke":
-      Component = BootlegSmoke
-      break
-    case "/ChillHopRaccoon":
-      Component = ChillHopRaccoon
-      break
-    case "/ChillHopRelaxingRaccoon":
-      Component = ChillHopRelaxingRaccoon
-      break
-    case "/CollegeGuy":
-      Component = CollegeGuy
-      break
-    case "/CollegeLonely":
-      Component = CollegeLonely
-      break
-    case "/DreamHop":
-      Component = DreamHop
-      break
-    case "/EverythingFadesToBlue":
-      Component = EverythingFadesToBlue
-      break
-    case "/LofiGirl":
-      Component = LofiGirl
-      break
-    case "LofiSleepyGirl":
-      Component = LofiSleepyGirl
-      break
-    case "Taiki":
-      Component = Taiki
-      break
-  }
 
   return (
     <div className="App">
       <NavBar />
       <AudioPlayer />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<App />} /> 
+          <Route path="/BootlegSmoke" element={<BootlegSmoke />} />
+          <Route path="/ChillHopRaccoon" element={<ChillHopRaccoon />} />
+          <Route path="/ChillHopRelaxingRaccoon" element={<ChillHopRelaxingRaccoon />} />
+          <Route path="/CollegeGuy" element={<CollegeGuy />} />
+          <Route path="CollegeLonely" element={<CollegeLonely />} />
+          <Route path="DreamHop" element={<DreamHop />} />
+          <Route path="EverythingFadesToBlue" element={<EverythingFadesToBlue />} />
+          <Route path="LofiGirl" element={<LofiGirl />} />
+          <Route path="LofiSleepyGirl" element={<LofiSleepyGirl />} />
+          <Route path="Taiki" element={<Taiki />} />
+        </Routes>
+      </div>
     </div>
   );
 }

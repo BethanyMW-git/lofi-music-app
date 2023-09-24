@@ -1,10 +1,8 @@
 import { Song } from './Song'
-
-//In my inspiration app, when the user clicks on the LOFIMUSIC site title,
-//it is programmed to shuffle to a random song. This can be an optional
-//feature for me to build in as a separate component.
+import { Link } from 'react-router-dom'
 
 export function NavBar() {
+ 
     const songs = [
         "BOOTLEG SMOKE",
         "CHILLHOP RACCOON",
@@ -21,37 +19,37 @@ export function NavBar() {
     return (
     <div class="nav-container">
         <nav className="nav">
-            <a href="/" className="site-title">LOFIMUSIC</a>
+            <Link to="/" className="site-title">LOFIMUSIC</Link>
             <ul>
                 <li>
-                    <a href="/bootleg-smoke" className="song" onClick={() => {return (<Song prop={songs[0]}/>)}}>BOOTLEG SMOKE</a>
+                    <Link to="/bootleg-smoke" className="song" onClick={() => {return (<Song prop={songs[0]}/>)}}>BOOTLEG SMOKE</Link>
                 </li>
                 <li>
-                    <a href="/chillhop-raccoon" className="song" onClick={() => {return (<Song prop={songs[1]}/>)}}>CHILLHOP RACCOON</a>
+                    <Link to="/chillhop-raccoon" className="song" onClick={() => {return (<Song prop={songs[1]}/>)}}>CHILLHOP RACCOON</Link>
                 </li>
                 <li>
-                    <a href="/chillhop-relaxing-raccoon" className="song" onClick={() => {return (<Song prop={songs[2]}/>)}}>CHILLHOP RELAXING RACCOON</a>
+                    <Link to="/chillhop-relaxing-raccoon" className="song" onClick={() => {return (<Song prop={songs[2]}/>)}}>CHILLHOP RELAXING RACCOON</Link>
                 </li>
                 <li>
-                    <a href="/college-guy" className="song" onClick={() => {return (<Song prop={songs[3]}/>)}}>COLLEGE GUY</a>
+                    <Link to="/college-guy" className="song" onClick={() => {return (<Song prop={songs[3]}/>)}}>COLLEGE GUY</Link>
                 </li>
                 <li>
-                    <a href="/college-lonely" className="song" onClick={() => {return (<Song prop={songs[4]}/>)}}>COLLEGE LONELY</a>
+                    <Link to="/college-lonely" className="song" onClick={() => {return (<Song prop={songs[4]}/>)}}>COLLEGE LONELY</Link>
                 </li>
                 <li>
-                    <a href="dreamhop" className="song" onClick={() => {return (<Song prop={songs[5]}/>)}}>DREAMHOP</a>
+                    <Link to="dreamhop" className="song" onClick={() => {return (<Song prop={songs[5]}/>)}}>DREAMHOP</Link>
                 </li>
                 <li>
-                    <a href="everything-fades-to-blue" className="song" onClick={() => {return (<Song prop={songs[6]}/>)}}>EVERYTHING FADES TO BLUE</a>
+                    <Link to="everything-fades-to-blue" className="song" onClick={() => {return (<Song prop={songs[6]}/>)}}>EVERYTHING FADES TO BLUE</Link>
                 </li>
                 <li>
-                    <a href="lofi-girl" className="song" onClick={() => {return (<Song prop={songs[7]}/>)}}>LOFI GIRL</a>
+                    <Link to="lofi-girl" className="song" onClick={() => {return (<Song prop={songs[7]}/>)}}>LOFI GIRL</Link>
                 </li>
                 <li>
-                    <a href="lofi-sleepy-girl" className="song" onClick={() => {return (<Song prop={songs[8]}/>)}}>LOFI SLEEPY GIRL</a>
+                    <Link to="lofi-sleepy-girl" className="song" onClick={() => {return (<Song prop={songs[8]}/>)}}>LOFI SLEEPY GIRL</Link>
                 </li>
                 <li>
-                    <a href="taiki" className="song" onClick={() => {return (<Song prop={songs[9]}/>)}}>TAIKI</a>
+                    <Link to="taiki" className="song" onClick={() => {return (<Song prop={songs[9]}/>)}}>TAIKI</Link>
                 </li>
             </ul>
         </nav>
