@@ -1,0 +1,87 @@
+.audioPlayer {
+    display: flex;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    /*background-color: yellow;*/
+}
+
+button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    height: 50%;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+button.play {
+    padding: 24px;
+    margin-top: 20px;
+    font-size: 1.25rem;
+}
+
+button:hover {
+    font-size: 1.5rem;
+}
+
+button.play:hover {
+    font-size: 1.75rem;
+}
+
+.volume {
+    margin-left: 6px;
+    margin-top: 55px;
+    display: block;
+    width: 100px;
+
+    --bar-bg: white;
+    --seek-before-width: 0px;
+    --seek-before-color: silver;
+    --knobby: white;
+    --selectedKnobby: teal;
+    appearance: none;
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    height: 1px;
+    outline: none;
+}
+
+.volume::before {
+    content: '';
+    height: 1px;
+    width: var(--seek-before-width);
+    background-color: var(--seek-before-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--knobby);
+    cursor: pointer;
+    position: relative;
+    margin: -2px 0 0 0;
+    z-index: 3;
+    box-sizing: border-box;
+}

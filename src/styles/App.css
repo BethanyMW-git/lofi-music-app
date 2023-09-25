@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   background-color: black;
+  width: auto;
+  height: 50rem;
 }
 
 /*.App-header {
