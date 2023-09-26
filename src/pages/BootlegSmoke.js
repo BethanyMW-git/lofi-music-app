@@ -1,13 +1,13 @@
-//import { Song } from "./Song";
+import { Song } from "./components/Song";
 
 export function BootlegSmoke(songs) {
     return (
-    //<Song prop={songs[1]}/>
-    //<>
-    //<h1>{songs[0]}</h1>
-    //<hr />
-    //<h2>from the bootleg boy channel</h2>
-    //</>
+    <>
+    <Song onClick={songs[1]}/>
+    
+    <h1>{songs[0]}</h1>
+    <hr />
+    <h2>from the bootleg boy channel</h2>
 
     <div class="youtube-video">
         <iframe
@@ -23,6 +23,6 @@ export function BootlegSmoke(songs) {
             data-gtm-yt-inspected-6="true">
         </iframe>
     </div>
-
+    </>
     )
 }
