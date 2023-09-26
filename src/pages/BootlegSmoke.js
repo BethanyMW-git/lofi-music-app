@@ -1,4 +1,4 @@
-import { Song } from "./components/Song";
+import { Song } from "../components/Song";
 
 export function BootlegSmoke(songs) {
     return (
