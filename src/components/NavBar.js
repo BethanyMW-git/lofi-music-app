@@ -3,23 +3,11 @@ import { Link } from 'react-router-dom'
 
 export default function NavBar() {
     const path = window.location.pathname
-    const songs = [
-        "BOOTLEG SMOKE",
-        "CHILLHOP RACCOON",
-        "CHILLHOP RELAXING RACCOON",
-        "COLLEGE GUY",
-        "COLLEGE LONELY",
-        "DREAMHOP",
-        "EVERYTHING FADES TO BLUE",
-        "LOFI GIRL",
-        "LOFI SLEEPY GIRL",
-        "TAIKI"
-    ];
 
     return (
     <div class="nav-container">
         <nav className="nav">
-            <Link to="/" className="site-title">LOFIMUSIC</Link>
+            <Link to="/" className="site-title">LOFI LIVE</Link>
             <ul>
                 <li>
                     <Link to="/BootlegSmoke" className="song">BOOTLEG SMOKE</Link>

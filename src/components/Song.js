@@ -8,6 +8,11 @@ export function Song() {
     //Here I would like to use the YouTube Embedded Player API to play a video/song after a specific title is clicked from the Nav
     //"https://www.youtube.com/iframe_api"
     useEffect(() => {
+        const fetchData = async () => {
+            const result = await fetch(URL)
+            console.log(result)
+        }
+    
         fetch()
             .then(res => res.json())
             .then(
@@ -30,7 +35,6 @@ export function Song() {
         return (
             <>
                 <div id="player">The iframe and video player will replace this div tag</div>
-                <Header className="song-header"/>
             </>
         )
     }

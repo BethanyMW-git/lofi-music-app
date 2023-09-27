@@ -7,6 +7,7 @@ import {
 import './styles/App.css';
 import NavBar from "./components/NavBar";
 import SiteRoutes from "./components/SiteRoutes";
+import WeatherAPI from './components/WeatherAPI';
 
 export default function App() {
 
@@ -14,6 +15,7 @@ export default function App() {
     <div className="App">
       <NavBar />
       <SiteRoutes />
+      <WeatherAPI />
     </div>
   );
 }
