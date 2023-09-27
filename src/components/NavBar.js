@@ -1,11 +1,7 @@
 import { Song } from './Song'
-import {
-    Link
-} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-//const router = createBrowserRouter();
-
-export function NavBar() {
+export default function NavBar() {
     const path = window.location.pathname
     const songs = [
         "BOOTLEG SMOKE",
@@ -26,34 +22,34 @@ export function NavBar() {
             <Link to="/" className="site-title">LOFIMUSIC</Link>
             <ul>
                 <li>
-                    <Link to="/bootleg-smoke" className="song" onClick={() => {return (<Song prop={songs[0]}/>)}}>BOOTLEG SMOKE</Link>
+                    <Link to="/BootlegSmoke" className="song">BOOTLEG SMOKE</Link>
                 </li>
                 <li>
-                    <Link to="/chillhop-raccoon" className="song" onClick={() => {return (<Song prop={songs[1]}/>)}}>CHILLHOP RACCOON</Link>
+                    <Link to="/ChillHopRaccoon" className="song">CHILLHOP RACCOON</Link>
                 </li>
                 <li>
-                    <Link to="/chillhop-relaxing-raccoon" className="song" onClick={() => {return (<Song prop={songs[2]}/>)}}>CHILLHOP RELAXING RACCOON</Link>
+                    <Link to="/ChillHopRelaxingRaccoon" className="song">CHILLHOP RELAXING RACCOON</Link>
                 </li>
                 <li>
-                    <Link to="/college-guy" className="song" onClick={() => {return (<Song prop={songs[3]}/>)}}>COLLEGE GUY</Link>
+                    <Link to="/CollegeGuy" className="song">COLLEGE GUY</Link>
                 </li>
                 <li>
-                    <Link to="/college-lonely" className="song" onClick={() => {return (<Song prop={songs[4]}/>)}}>COLLEGE LONELY</Link>
+                    <Link to="/CollegeLonely" className="song">COLLEGE LONELY</Link>
                 </li>
                 <li>
-                    <Link to="dreamhop" className="song" onClick={() => {return (<Song prop={songs[5]}/>)}}>DREAMHOP</Link>
+                    <Link to="/DreamHop" className="song">DREAMHOP</Link>
                 </li>
                 <li>
-                    <Link to="everything-fades-to-blue" className="song" onClick={() => {return (<Song prop={songs[6]}/>)}}>EVERYTHING FADES TO BLUE</Link>
+                    <Link to="/EverythingFadesToBlue" className="song">EVERYTHING FADES TO BLUE</Link>
                 </li>
                 <li>
-                    <Link to="lofi-girl" className="song" onClick={() => {return (<Song prop={songs[7]}/>)}}>LOFI GIRL</Link>
+                    <Link to="/LofiGirl" className="song">LOFI GIRL</Link>
                 </li>
                 <li>
-                    <Link to="lofi-sleepy-girl" className="song" onClick={() => {return (<Song prop={songs[8]}/>)}}>LOFI SLEEPY GIRL</Link>
+                    <Link to="/LofiSleepyGirl" className="song">LOFI SLEEPY GIRL</Link>
                 </li>
                 <li>
-                    <Link to="taiki" className="song" onClick={() => {return (<Song prop={songs[9]}/>)}}>TAIKI</Link>
+                    <Link to="/Taiki" className="song">TAIKI</Link>
                 </li>
             </ul>
         </nav>

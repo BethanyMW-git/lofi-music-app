@@ -1,4 +1,4 @@
-export function Header() {
+export default function Header() {
     return (
         <>
         <h1>Current Song Header</h1>

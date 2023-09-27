@@ -1,8 +1,5 @@
 import React, {useState, useEffect } from 'react'; //removed YT for testing purposes
-import { Header } from "./Header";
-
 export function Song() {
-    //const songs = ["BOOTLEG SMOKE", "CHILLHOP RACCOON", "CHILLHOP RELAXING RACCOON", "COLLEGE GUY", "COLLEGE LONELY", "DREAMHOP", "EVERYTHING FADES TO BLUE", "LOFI GIRL", "LOFI SLEEPY GIRL", "TAIKI"];
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [songs, setSongs] = useState([]);

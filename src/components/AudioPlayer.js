@@ -7,7 +7,7 @@ import { IoMdShuffle } from 'react-icons/io'; //shuffle button icon
 import { BiSolidVolumeFull } from 'react-icons/bi'; //volume button icon
 import { BiSolidVolumeMute } from 'react-icons/bi'; //mute button icon
 
-export function AudioPlayer() {
+export default function AudioPlayer() {
 
     //state
 

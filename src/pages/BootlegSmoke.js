@@ -1,6 +1,6 @@
 import { Song } from "../components/Song";
 
-export function BootlegSmoke(songs) {
+export default function BootlegSmoke(songs) {
     return (
     <>
     <Song onClick={songs[1]}/>
