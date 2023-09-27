@@ -1,8 +1,12 @@
 import { Song } from './Song'
-import { Link } from 'react-router-dom'
+import {
+    Link
+} from 'react-router-dom'
+
+//const router = createBrowserRouter();
 
 export function NavBar() {
- 
+    const path = window.location.pathname
     const songs = [
         "BOOTLEG SMOKE",
         "CHILLHOP RACCOON",
