@@ -1,9 +1,10 @@
 import { Song } from "../components/Song";
 
+//<Song onClick={songs[1].name}/>
+
 export default function BootlegSmoke(songs) {
     return (
     <>
-    <Song onClick={songs[1]}/>
     
     <h1>{songs[0]}</h1>
     <hr />
