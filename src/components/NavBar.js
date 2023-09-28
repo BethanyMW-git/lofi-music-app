@@ -10,9 +10,6 @@ export default function NavBar() {
             <Link to="/" className="site-title">LOFI LIVE</Link>
             <ul>
                 <li>
-                    <Link to="/BootlegSmoke" className="song">BOOTLEG SMOKE</Link>
-                </li>
-                <li>
                     <Link to="/ChillHopRaccoon" className="song">CHILLHOP RACCOON</Link>
                 </li>
                 <li>
@@ -32,6 +29,9 @@ export default function NavBar() {
                 </li>
                 <li>
                     <Link to="/LofiSleepyGirl" className="song">LOFI SLEEPY GIRL</Link>
+                </li>
+                <li>
+                    <Link to="/MidnightStargazing" className="song">MIDNIGHT STARGAZING</Link>
                 </li>
                 <li>
                     <Link to="/Synthwave" className="song">SYNTHWAVE</Link>

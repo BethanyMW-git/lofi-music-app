@@ -3,7 +3,6 @@ import ReactDOM , {createRoot} from 'react-dom/client';
 import { BrowserRouter, createBrowserRouter, RouterProvider, Route, Routes, Link } from 'react-router-dom'
 import "../styles/App.css";
 
-import BootlegSmoke from '../pages/BootlegSmoke'
 import ChillHopRaccoon from '../pages/ChillHopRaccoon'
 import ChillHopRelaxingRaccoon from '../pages/ChillHopRelaxingRaccoon'
 import CollegeGuy from '../pages/CollegeGuy'
@@ -14,6 +13,7 @@ import Synthwave from '../pages/Synthwave'
 import Home from '../pages/Home'
 import LofiGirl from '../pages/LofiGirl'
 import LofiSleepyGirl from '../pages/LofiSleepyGirl'
+import MidnightStargazing from '../pages/MidnightStargazing'
 import Taiki from '../pages/Taiki'
 
 export default function SiteRoutes() {
@@ -23,10 +23,6 @@ export default function SiteRoutes() {
             element: <Home />,
             errorElement: <ErrorPage />,
             children: [
-                {
-                    path: "BootlegSmoke",
-                    element: <BootlegSmoke />
-                },
                 {
                     path: "ChillHopRaccoon",
                     element: <ChillHopRaccoon />
@@ -58,6 +54,10 @@ export default function SiteRoutes() {
                 {
                     path: "LofiSleepyGirl",
                     element: <LofiSleepyGirl />
+                },
+                {
+                    path: 'MidnightStargazing',
+                    element: <MidnightStargazing />
                 },
                 {
                     path: "Taiki",
