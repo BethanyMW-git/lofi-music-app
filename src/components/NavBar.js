@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
+import LofiListenCounter from './LofiListenCounter'
 
-export default function NavBar() {
+export default function NavBar(LofiListenCounter) {
 
     return (
     <div class="nav-container">
@@ -8,7 +9,7 @@ export default function NavBar() {
             <Link to="/" className="site-title">LOFI LIVE</Link>
             <ul>
                 <li>
-                    <Link to="/ChillHopRaccoon" className="song">CHILLHOP RACCOON</Link>
+                    <Link to="/ChillHopRaccoon" className="song" onClick={LofiListenCounter}>CHILLHOP RACCOON</Link>
                 </li>
                 <li>
                     <Link to="/ChillHopRelaxingRaccoon" className="song">CHILLHOP RELAXING RACCOON</Link>

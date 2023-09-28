@@ -1,29 +1,29 @@
 //atlanta latitude and longitude: 33.7488° N, 84.3877° W
 //paris, france lat: 48.864716, lon: 2.349014
 
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 
-const URL = 'https://weatherapi-com.p.rapidapi.com/current.json?q=53.1%2C-0.13';
+// const URL = 'https://weatherapi-com.p.rapidapi.com/current.json?q=53.1%2C-0.13';
 
-export default function WeatherAPI() {
-    const [temp, setTemp] = useState(0)
+// export default function WeatherAPI() {
+//     const [temp, setTemp] = useState(0)
 
-    useEffect(() => {
-        const fetchData = async () => {
-          const result = await fetch(URL)
-          result.json().then(json => {
-            setTemp(json.current.temp_f)
-          })
-        }
-        fetchData();
-    }, []);
+//     useEffect(() => {
+//         const fetchData = async () => {
+//           const result = await fetch(URL)
+//           result.json().then(json => {
+//             setTemp()
+//           })
+//         }
+//         fetchData();
+//     }, []);
 
-    return (
-        <div className="weather">
-            Atlanta Temp Now: {temp}F
-        </div>
-    );
-}
+//     return (
+//         //<div className="weather">
+//             //Atlanta Temp Now: {temp}F
+//         //</div>
+//     );
+// }
 
 // const url = 'https://weatherapi-com.p.rapidapi.com/current.json?q=53.1%2C-0.13';
 // const options = {
