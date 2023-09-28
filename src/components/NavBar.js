@@ -1,8 +1,6 @@
-import { Song } from './Song'
 import { Link } from 'react-router-dom'
 
 export default function NavBar() {
-    const path = window.location.pathname
 
     return (
     <div class="nav-container">

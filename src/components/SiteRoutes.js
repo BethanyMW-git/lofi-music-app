@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM , {createRoot} from 'react-dom/client';
-import { BrowserRouter, createBrowserRouter, RouterProvider, Route, Routes, Link } from 'react-router-dom'
+import {createRoot} from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import "../styles/App.css";
 
 import ChillHopRaccoon from '../pages/ChillHopRaccoon'
@@ -82,25 +82,4 @@ export default function SiteRoutes() {
     ]);
 
     createRoot(document.getElementById("root")).render(<RouterProvider router={router} />);
-
-//     return (
-//         <Routes>
-//             <Route path="/BootlegSmoke" element={<BootlegSmoke />} />
-//             <Route path="/ChillHopRaccoon" element={<ChillHopRaccoon />} />
-//             <Route
-//                 path="/ChillHopRelaxingRaccoon"
-//                 element={<ChillHopRelaxingRaccoon />}
-//             />
-//             <Route path="/CollegeGuy" element={<CollegeGuy />} />
-//             <Route path="/CollegeLonely" element={<CollegeLonely />} />
-//             <Route path="/DreamHop" element={<DreamHop />} />
-//             <Route
-//                 path="/EverythingFadesToBlue"
-//                 element={<EverythingFadesToBlue />}
-//             />
-//             <Route path="/LofiGirl" element={<LofiGirl />} />
-//             <Route path="/LofiSleepyGirl" element={<LofiSleepyGirl />} />
-//             <Route path="/Taiki" element={<Taiki />} />
-//         </Routes>
-//     )
  }

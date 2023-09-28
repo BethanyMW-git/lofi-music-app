@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import tracks from '../data/tracks';
 import styles from '../styles/AudioPlayer.module.css';
 import { MdKeyboardArrowLeft } from 'react-icons/md'; //back button icon
 import { FaPlay } from 'react-icons/fa'; //play button icon
