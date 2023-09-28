@@ -28,13 +28,13 @@ export default function NavBar() {
                     <Link to="/DreamHop" className="song">DREAMHOP</Link>
                 </li>
                 <li>
-                    <Link to="/EverythingFadesToBlue" className="song">EVERYTHING FADES TO BLUE</Link>
-                </li>
-                <li>
                     <Link to="/LofiGirl" className="song">LOFI GIRL</Link>
                 </li>
                 <li>
                     <Link to="/LofiSleepyGirl" className="song">LOFI SLEEPY GIRL</Link>
+                </li>
+                <li>
+                    <Link to="/Synthwave" className="song">SYNTHWAVE</Link>
                 </li>
                 <li>
                     <Link to="/Taiki" className="song">TAIKI</Link>

@@ -10,7 +10,7 @@ import CollegeGuy from '../pages/CollegeGuy'
 import CollegeLonely from '../pages/CollegeLonely'
 import DreamHop from '../pages/DreamHop'
 import ErrorPage from '../pages/ErrorPage'
-import EverythingFadesToBlue from '../pages/EverythingFadesToBlue'
+import Synthwave from '../pages/Synthwave'
 import Home from '../pages/Home'
 import LofiGirl from '../pages/LofiGirl'
 import LofiSleepyGirl from '../pages/LofiSleepyGirl'
@@ -48,8 +48,8 @@ export default function SiteRoutes() {
                     element: <DreamHop />
                 },
                 {
-                    path: "EverythingFadesToBlue",
-                    element: <EverythingFadesToBlue />
+                    path: "Synthwave",
+                    element: <Synthwave />
                 },
                 {
                     path: "LofiGirl",
